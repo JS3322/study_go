@@ -11,6 +11,14 @@ func main() {
 
 	fmt.Println("hello world")
 
+	numExample1 := 11
+	numExample2 := &numExample1
+	var numExample3 *int = &numExample1
+	fmt.Println(numExample2)
+	fmt.Println(*numExample2)
+	fmt.Println(numExample3)
+	fmt.Println(*numExample3)
+
 	//&메모리 주소
 
 	var num0001 int

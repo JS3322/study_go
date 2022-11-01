@@ -4,11 +4,11 @@
 [2] 연산자     
 [3] 함수   
 [4] if / for   
-[5] 배열   
-[6] 구조체   
-[7] 포인터   
+[5] 배열 array   
+[6] slice   
+[7] 포인터 &*   
 [8] string  
-[9] slice   
+[9] 구조체   
 [10] 메서드    
 [11]    interface   
 [12]    reflection       

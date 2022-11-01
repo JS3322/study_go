@@ -1,0 +1,1 @@
+package code00000000_goroutine_channel_streamming
