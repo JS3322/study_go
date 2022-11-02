@@ -1,12 +1,8 @@
-package code00000001_testing_coverage
+package code00000001_testing_coverage1
 
 import (
 	"testing"
 )
-
-// function 커버리지 = (실행된 함수의 수 / 전체 함수의 수) * 100
-// line 커버리지
-// condition / decision 커버리지
 
 // fileName은 *_test.go
 // func 이름은 Test로 시작
@@ -30,6 +26,7 @@ func TestAppend(t *testing.T) {
 // go test -coverprofile=coverage.out / go tool cover -html=coverage.out
 // go test -bench=. : 속도
 // go test -bench=. -benchmem : 속도, 메모리
+// go test -bench .
 
 func TestCheck(t *testing.T) {
 	v := testFunc0002()

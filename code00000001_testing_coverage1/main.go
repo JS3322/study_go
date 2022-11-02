@@ -1,4 +1,4 @@
-package code00000001_testing_coverage
+package code00000001_testing_coverage1
 
 func testFunc0001() int {
 	return 2

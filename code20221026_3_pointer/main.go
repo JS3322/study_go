@@ -14,8 +14,8 @@ func main() {
 	numExample1 := 11
 	numExample2 := &numExample1
 	var numExample3 *int = &numExample1
-	fmt.Println(numExample2)
-	fmt.Println(*numExample2)
+	fmt.Println(numExample2)  // numExample1 의 주소
+	fmt.Println(*numExample2) // '' 의 값
 	fmt.Println(numExample3)
 	fmt.Println(*numExample3)
 

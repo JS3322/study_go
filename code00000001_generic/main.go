@@ -26,6 +26,10 @@ type NumberList interface {
 // any 모든 타입 가능
 // useGenericMinCalc(a interface{}) 모든 타입은 인터페이스 가능하나 operation 불가능
 // useGenericMinCalc[T int | int16] or절 대신에 type interface 활용
+func aaa[T IntegerList](input T) T {
+	return input
+}
+
 func useGenericMinCalc[T NumberList](a, b T) T {
 	if a < b {
 		return a
