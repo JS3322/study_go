@@ -1,5 +1,6 @@
 // https://www.joinc.co.kr/w/man/12/golang/networkProgramming/SocketProgramming
-
+// https://ipfs.io/ipfs/QmfYeDhGH9bZzihBUDEQbCbTc5k5FZKURMUoUvfmc27BwL/socket/ip_address_type.html
+// https://organicprogrammer.com/2021/07/31/how-to-implement-simple-http-server-golang/
 package main
 
 //net
@@ -34,7 +35,7 @@ func main() {
 	network := addr.Mask(mask)
 	ones, bits := mask.Size()
 	/*
-		주소는 127.0.0.1로 A클래스 주소다.
+		주소는 127.0.0.1로 클래스 주소다.
 		default mask의 크기는 32bit다.
 		A클래스이니 앞 8비트를 이용해서 마스크 연산을 한다.
 		마스크는 ff000000(255.0.0.0)이다.

@@ -14,8 +14,9 @@ func main() {
 		os.Exit(1)
 	}
 	name := os.Args[1]
-
+	// domain 매개변수 받아서 사용하는 ip 목록 출력
 	addrs, err := net.LookupHost(name)
+	// net.ResolveIPAddr("ip", name) // ip 찾기
 	if err != nil {
 		fmt.Println("Resolution error", err.Error())
 		os.Exit(1)
