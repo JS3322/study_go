@@ -42,7 +42,7 @@ func getSprite(path string) (*pixel.Sprite, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	//
 	//defer File.Close()
 	img, _, err := image.Decode(file)
 	if err != nil {
