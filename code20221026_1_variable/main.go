@@ -11,6 +11,7 @@ func main() {
 	//: var
 	number := 90
 	var testNum int32 = 20
+	print(testNum)
 	var message string = "hello world"
 	aSlice := []int{1, 2, 3, 4, 5}
 	//fmt 패키지의 Println : 에러가 날 수 있다
