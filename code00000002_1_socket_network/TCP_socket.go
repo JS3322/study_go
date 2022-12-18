@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net"
 	"os"
 )
 
+// go run TCP_scoket.go naver.com:80
 func main() {
 	if len(os.Args) != 2 {
 		fmt.Println(os.Stderr, "Usage %s host:port", os.Args[0])
@@ -23,7 +24,7 @@ func main() {
 	_, err = conn.Write([]byte("HEAD / HTTP/1.0\r\n\r\n"))
 	checkError(err)
 
-	result, err := ioutil.ReadAll(conn)
+	result, err := io.ReadAll(conn)
 	checkError(err)
 
 	fmt.Println(string(result))
